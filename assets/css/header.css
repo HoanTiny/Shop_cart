@@ -1,0 +1,49 @@
+header {
+    width: 100%;
+    background-color: #f4f6f7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 50px;
+    font-family: var(--font-source-sans-pro);
+    font-size: 1.4rem;
+    width: var(--primary-width);
+}
+.header__phone .phone_number {
+    text-decoration: none;
+    color: var(--primary-color);
+    font-weight: 500;
+    margin-left: 4px;
+}
+.header__social-item {
+    text-decoration: none;
+    color: var(--primary-color);
+    margin-right: 20px;
+}
+.header__social-item .fa-youtube {
+    color: #f44336;
+}
+.header__action ul {
+    display: flex;
+    justify-content: space-between;
+}
+.header__action ul li {
+    margin-right: 22px;
+}
+.header__whishlist {
+    width: 100px;
+    height: 30px;
+    background-color: #494c64;
+    color: #fff;
+    border-radius: 3px;
+    border: none;
+    cursor: pointer;
+}
+
+/*# sourceMappingURL=header.css.map */

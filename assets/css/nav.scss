@@ -1,0 +1,93 @@
+nav {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: var(--primary-width);
+    font-size: 1.4rem;
+    &__logo {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        span {
+            font-weight: bold;
+            font-size: 2.7rem;
+            margin-left: 4px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+    }
+    &__menu {
+        display: flex;
+        align-items: center;
+        text-transform: uppercase;
+        ul {
+            display: flex;
+            align-items: center;
+            li {
+                display: flex;
+                justify-content: space-between;
+                margin-right: 50px;
+                font-weight: 700;
+                &:hover {
+                    color: #00bcd4;
+                    cursor: pointer;
+                }
+            }
+            .active {
+                border: 2px solid var(--primary-color);
+                padding: 8px 20px;
+            }
+        }
+    }
+    &__menu-languages {
+        img {
+            width: 20px;
+            height: 14px;
+        }
+        margin-right: 22px;
+    }
+    &__menu-search {
+        margin-right: 22px;
+        i {
+            font-size: 1.6rem;
+        }
+    }
+    &__menu-cart {
+        position: relative;
+        margin-right: 27px;
+        i {
+            font-size: 1.6rem;
+        }
+        &::before {
+            content: "";
+            display: block;
+            position: absolute;
+            right: -10px;
+            top: -2px;
+            border-width: 9px 6px;
+            border-style: solid;
+            border-color: transparent blue transparent transparent;
+        }
+        &::after {
+            content: "2";
+            background-color: blue;
+            color: white;
+            display: block;
+            position: absolute;
+            right: -28px;
+            top: -2px;
+            font-size: 10px;
+            border-width: 0px 6px;
+            border-style: solid;
+            border-color: blue;
+        }
+    }
+}
