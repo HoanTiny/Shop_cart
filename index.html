@@ -10,10 +10,6 @@
             href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.csss"
         />
         <link rel="stylesheet" href="./assets/css/style.css" />
-        <link rel="stylesheet" href="./assets/css/header.css" />
-        <link rel="stylesheet" href="./assets/css/nav.css" />
-        <link rel="stylesheet" href="./assets/css/main.css" />
-        <link rel="stylesheet" href="./assets/css/footer.css" />
         <link
             href="https://fonts.googleapis.com/css2?family=Gochi+Hand&family=IBM+Plex+Sans:wght@200;300;400;500;600;700&family=Montserrat:wght@100;200;300;400;500;600&family=Open+Sans:wght@300;400;500;600&family=Orbitron:wght@400;500;600;700;800;900&family=Roboto:wght@100;300;400;500;700&family=Source+Sans+Pro:wght@200;300;400;600;700&display=swap"
             rel="stylesheet"
@@ -29,15 +25,15 @@
     </head>
     <body>
         <div class="container">
-            <header>
-                <div class="header">
+            <header class="hide-on-mobile">
+                <div class="header hide-on-mobile">
                     <div class="header__phone">
                         <i class="fa-solid fa-headphones"></i>
                         <a class="phone_number" href="tel:+1 916-85-2235"
                             >+1 916-85-2235</a
                         >
                     </div>
-                    <div class="header__social">
+                    <div class="header__social hide-on-tablet">
                         <a href="#" class="header__social-item">
                             <i class="fa-brands fa-twitter"></i>
                         </a>
@@ -74,13 +70,53 @@
             </header>
             <nav>
                 <div class="nav">
+                    <!-- nav mobile -->
+                    <label for="mobile-search-checkbox" class="nav__bars-btn">
+                        <i class="fas fa-bars"></i>
+                    </label>
+                    <input
+                        hidden
+                        type="checkbox"
+                        id="mobile-search-checkbox"
+                        class="nav__search-checkbox"
+                    />
+                    <label
+                        for="mobile-search-checkbox"
+                        class="nav__overlay"
+                    ></label>
+                    <div class="nav__menu-mobile">
+                        <label
+                            for="mobile-search-checkbox"
+                            class="nav__mobile-close"
+                        >
+                            <i class="fas fa-times"></i>
+                        </label>
+                        <ul>
+                            <li>HOME</li>
+                            <li>PAGES</li>
+                            <li>BLOG</li>
+                            <li>Portfolios</li>
+                            <li class="active">SHOP</li>
+                            <li>FEATURES</li>
+                            <li>ELEMENTS</li>
+                        </ul>
+                    </div>
+
                     <div class="nav__logo">
                         <img
                             src="./assets/img/Vector Smart Object copy.png"
                             alt=""
                         /><span>THEGEM</span>
                     </div>
-                    <div class="nav__menu">
+                    <div class="nav__right">
+                        <div class="nav__menu-search">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </div>
+                        <div class="nav__menu-cart">
+                            <i class="fa-solid fa-cart-arrow-down"></i>
+                        </div>
+                    </div>
+                    <div class="nav__menu hide-on-mobile hide-on-tablet">
                         <ul>
                             <li>HOME</li>
                             <li>PAGES</li>
@@ -106,7 +142,9 @@
                 <div class="main-woocart">
                     <div class="main-woocart__header">
                         <div class="main-woocart__header-title">
-                            <div class="main-woocart__header-title-text">
+                            <div
+                                class="main-woocart__header-title-text hide-on-mobile"
+                            >
                                 <span>Woo</span>
                                 <span>Cart</span>
                             </div>
@@ -120,7 +158,7 @@
                                 <span>Third Level</span>
                             </div>
                         </div>
-                        <div class="main-woocart__header-icon">
+                        <div class="main-woocart__header-icon hide-on-mobile">
                             <i class="bx bx-cart"></i>
                         </div>
                     </div>
@@ -128,7 +166,7 @@
                 <div class="main-productcart">
                     <div class="main-productcart__item">
                         <h4>You have <span>6 items</span> in your cart.</h4>
-                        <table class="table">
+                        <table class="table hide-on-mobile">
                             <thead class="thead-primary">
                                 <tr class="table__title">
                                     <th>&nbsp;</th>
@@ -369,6 +407,291 @@
                                 </tr>
                             </tbody>
                         </table>
+                        <table class="hide-on-pc table-product">
+                            <thead>
+                                <tr>
+                                    <th scope="col">&nbsp;</th>
+                                    <th scope="col">Product</th>
+                                    <th scope="col">Price</th>
+                                    <th scope="col">Quantity</th>
+                                    <th scope="col">total</th>
+                                    <!-- <th scope="col">Account</th>
+                                    <th scope="col">Due Date</th>
+                                    <th scope="col">Amount</th>
+                                    <th scope="col">Period</th> -->
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="table__remove">
+                                        <button
+                                            type="button"
+                                            class="close"
+                                            data-dismiss="alert"
+                                            aria-label="Close"
+                                        >
+                                            <span aria-hidden="true"
+                                                ><i class="fa fa-close"></i
+                                            ></span>
+                                        </button>
+                                    </td>
+                                    <td
+                                        data-label="Product"
+                                        class="table__nameitems"
+                                    >
+                                        <img
+                                            src="./assets/img/languages.png"
+                                            alt=""
+                                        />
+                                        <div>
+                                            <span
+                                                >Sneakers Shoes 2020 For Men
+                                            </span>
+                                            <span
+                                                >Size: Large, Color: Black
+                                                Consect</span
+                                            >
+                                        </div>
+                                    </td>
+                                    <td data-label="Price" class="table__price">
+                                        $44.99
+                                    </td>
+                                    <td
+                                        data-label="Quantity"
+                                        class="table__quantity"
+                                    >
+                                        <div class="table__quantity-inputgroup">
+                                            <button
+                                                class="btn-outline-primary"
+                                                type="button"
+                                                id="button-addon1"
+                                            >
+                                                -
+                                            </button>
+                                            <input
+                                                type="text"
+                                                name="quantity"
+                                                class="quantity form-control input-number"
+                                                value="2"
+                                                min="1"
+                                                max="100"
+                                            />
+                                            <button
+                                                class="btn-outline-primary"
+                                                type="button"
+                                                id="button-addon1"
+                                            >
+                                                +
+                                            </button>
+                                        </div>
+                                    </td>
+                                    <td data-label="total" class="table__total">
+                                        $89.98
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="table__remove">
+                                        <button
+                                            type="button"
+                                            class="close"
+                                            data-dismiss="alert"
+                                            aria-label="Close"
+                                        >
+                                            <span aria-hidden="true">
+                                                <i class="fa fa-close"></i>
+                                            </span>
+                                        </button>
+                                    </td>
+                                    <td
+                                        data-label="Product"
+                                        class="table__nameitems"
+                                    >
+                                        <img
+                                            src="./assets/img/languages.png"
+                                            alt=""
+                                        />
+                                        <div>
+                                            <span
+                                                >Sneakers Shoes 2020 For Men
+                                            </span>
+                                            <span
+                                                >Size: Large, Color: Black
+                                                Consect</span
+                                            >
+                                        </div>
+                                    </td>
+                                    <td data-label="Price" class="table__price">
+                                        $44.99
+                                    </td>
+                                    <td
+                                        data-label="Quantity"
+                                        class="table__quantity"
+                                    >
+                                        <div class="table__quantity-inputgroup">
+                                            <button
+                                                class="btn-outline-primary"
+                                                type="button"
+                                                id="button-addon1"
+                                            >
+                                                -
+                                            </button>
+                                            <input
+                                                type="text"
+                                                name="quantity"
+                                                class="quantity form-control input-number"
+                                                value="2"
+                                                min="1"
+                                                max="100"
+                                            />
+                                            <button
+                                                class="btn-outline-primary"
+                                                type="button"
+                                                id="button-addon1"
+                                            >
+                                                +
+                                            </button>
+                                        </div>
+                                    </td>
+                                    <td data-label="total" class="table__total">
+                                        $89.98
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="table__remove">
+                                        <button
+                                            type="button"
+                                            class="close"
+                                            data-dismiss="alert"
+                                            aria-label="Close"
+                                        >
+                                            <span aria-hidden="true"
+                                                ><i class="fa fa-close"></i
+                                            ></span>
+                                        </button>
+                                    </td>
+                                    <td
+                                        data-label="Product"
+                                        class="table__nameitems"
+                                    >
+                                        <img
+                                            src="./assets/img/languages.png"
+                                            alt=""
+                                        />
+                                        <div>
+                                            <span
+                                                >Sneakers Shoes 2020 For Men
+                                            </span>
+                                            <span
+                                                >Size: Large, Color: Black
+                                                Consect</span
+                                            >
+                                        </div>
+                                    </td>
+                                    <td data-label="Price" class="table__price">
+                                        $44.99
+                                    </td>
+                                    <td
+                                        data-label="Quantity"
+                                        class="table__quantity"
+                                    >
+                                        <div class="table__quantity-inputgroup">
+                                            <button
+                                                class="btn-outline-primary"
+                                                type="button"
+                                                id="button-addon1"
+                                            >
+                                                -
+                                            </button>
+                                            <input
+                                                type="text"
+                                                name="quantity"
+                                                class="quantity form-control input-number"
+                                                value="2"
+                                                min="1"
+                                                max="100"
+                                            />
+                                            <button
+                                                class="btn-outline-primary"
+                                                type="button"
+                                                id="button-addon1"
+                                            >
+                                                +
+                                            </button>
+                                        </div>
+                                    </td>
+                                    <td data-label="total" class="table__total">
+                                        $89.98
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="table__remove">
+                                        <button
+                                            type="button"
+                                            class="close"
+                                            data-dismiss="alert"
+                                            aria-label="Close"
+                                        >
+                                            <span aria-hidden="true"
+                                                ><i class="fa fa-close"></i
+                                            ></span>
+                                        </button>
+                                    </td>
+                                    <td
+                                        data-label="Product"
+                                        class="table__nameitems"
+                                    >
+                                        <img
+                                            src="./assets/img/languages.png"
+                                            alt=""
+                                        />
+                                        <div>
+                                            <span
+                                                >Sneakers Shoes 2020 For Men
+                                            </span>
+                                            <span
+                                                >Size: Large, Color: Black
+                                                Consect</span
+                                            >
+                                        </div>
+                                    </td>
+                                    <td data-label="Price" class="table__price">
+                                        $44.99
+                                    </td>
+                                    <td
+                                        data-label="Quantity"
+                                        class="table__quantity"
+                                    >
+                                        <div class="table__quantity-inputgroup">
+                                            <button
+                                                class="btn-outline-primary"
+                                                type="button"
+                                                id="button-addon1"
+                                            >
+                                                -
+                                            </button>
+                                            <input
+                                                type="text"
+                                                name="quantity"
+                                                class="quantity form-control input-number"
+                                                value="2"
+                                                min="1"
+                                                max="100"
+                                            />
+                                            <button
+                                                class="btn-outline-primary"
+                                                type="button"
+                                                id="button-addon1"
+                                            >
+                                                +
+                                            </button>
+                                        </div>
+                                    </td>
+                                    <td data-label="total" class="table__total">
+                                        $89.98
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
                         <div class="main-productcart__item-coupon">
                             <div class="coupon">
                                 <input
@@ -460,8 +783,12 @@
                                     <span>Denim Classy Shorts</span>
                                     <p>$35.00–$89.99</p>
                                 </div>
-                                <div class="interest-list__item">
-                                    <img src="./assets/img/lisa.jpg" alt="" />
+                                <div class="interest-list__item active">
+                                    <img
+                                        class="mask_img"
+                                        src="./assets/img/lisa.jpg"
+                                        alt=""
+                                    />
                                     <span>Golden Heels</span>
                                     <p>$89.99</p>
                                 </div>

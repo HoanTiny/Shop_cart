@@ -1,3 +1,4 @@
+@import "./variable";
 footer {
     width: 100%;
     background-color: #212331;
@@ -32,9 +33,9 @@ footer {
 }
 
 .footer {
-    font-family: var(--font-source-sans-pro);
+    font-family: $font-source-sans-pro;
 
-    width: var(--primary-width);
+    width: $primary-width;
     display: flex;
     padding: 132px 0;
     justify-content: space-between;
@@ -78,14 +79,14 @@ footer {
         &-intro {
             color: #818e9b;
             font-size: 1.6rem;
-            font-family: var(--font-source-sans-pro);
+            font-family: $font-source-sans-pro;
             font-weight: 400;
         }
         &-heading {
             margin-top: 72px;
         }
         &-address {
-            font-family: var(--font-source-sans-pro);
+            font-family: $font-source-sans-pro;
             font-size: 1.6rem;
             color: #99a9b5;
             i {
@@ -100,7 +101,7 @@ footer {
             margin: 27px 0;
         }
         &-contact {
-            font-family: var(--font-source-sans-pro);
+            font-family: $font-source-sans-pro;
             font-size: 1.6rem;
             color: #717c89;
             .contact-phone,
@@ -156,26 +157,26 @@ footer {
                 margin-left: 12px;
                 &-heading {
                     font-size: 1.4rem;
-                    color: var(--primary-color-footer);
+                    color: $primary-color-footer;
                 }
                 &-date {
                     display: flex;
                     justify-content: space-between;
                     font-size: 1.4rem;
                     span.date-post {
-                        color: var(--primary-color-footer-link);
+                        color: $primary-color-footer-link;
                     }
                     .comment {
-                        color: var(--primary-color-footer);
+                        color: $primary-color-footer;
                     }
                     .comment.active {
-                        color: var(--primary-color-footer-link);
+                        color: $primary-color-footer-link;
                     }
                 }
             }
         }
         &-links {
-            color: var(--primary-color-footer);
+            color: $primary-color-footer;
             font-size: 1.6rem;
             &-list {
                 padding-left: 0px;
@@ -200,13 +201,13 @@ footer {
                     width: 8px;
                     height: 8px;
                     border-radius: 50%;
-                    background-color: var(--primary-color-footer-link);
+                    background-color: $primary-color-footer-link;
                 }
                 &-item.active:before {
                     background-color: #fff;
                 }
                 &-item.active {
-                    color: var(--primary-color-footer-link);
+                    color: $primary-color-footer-link;
                 }
             }
         }
@@ -231,7 +232,7 @@ footer {
                     margin-bottom: 12px;
                     border-radius: 4px;
                     &:focus-within {
-                        border: 1px solid var(--primary-color-footer-link);
+                        border: 1px solid $primary-color-footer-link;
                     }
                     input {
                         background-color: transparent;
@@ -260,12 +261,12 @@ footer {
                     color: #656f7d;
                     &:focus {
                         border-color: transparent;
-                        outline-color: var(--primary-color-footer-link);
+                        outline-color: $primary-color-footer-link;
                     }
                 }
                 button {
                     text-transform: uppercase;
-                    background-color: var(--primary-color-footer);
+                    background-color: $primary-color-footer;
                     color: #99a9b5;
                     height: 40px;
                     font-weight: 600;
@@ -340,14 +341,14 @@ footer {
         }
         &-title {
             font-size: 16px;
-            color: var(--primary-color-footer);
+            color: $primary-color-footer;
             margin-bottom: 42px;
         }
         &-input {
             display: flex;
             align-items: center;
             &:focus-within {
-                border: 1px solid var(--primary-color-footer-link);
+                border: 1px solid $primary-color-footer-link;
             }
             input {
                 flex: 1;
@@ -362,7 +363,7 @@ footer {
                 height: 40px;
                 width: 40px;
                 border: none;
-                color: var(--primary-color-footer);
+                color: $primary-color-footer;
                 font-weight: 600;
                 cursor: pointer;
             }
@@ -372,7 +373,7 @@ footer {
             color: #4a4b5b;
             p {
                 span {
-                    color: var(--primary-color-footer-link);
+                    color: $primary-color-footer-link;
                 }
             }
         }
@@ -386,17 +387,17 @@ footer {
     align-items: center;
     background-color: #181828;
     height: 100px;
-    font-family: var(--font-source-sans-pro);
+    font-family: $font-source-sans-pro;
     &__content {
-        width: var(--primary-width);
+        width: $primary-width;
         display: flex;
         justify-content: space-between;
         &-text {
             font-size: 1.4rem;
 
-            color: var(--primary-color-footer);
+            color: $primary-color-footer;
             span {
-                color: var(--primary-color-footer-link);
+                color: $primary-color-footer-link;
             }
         }
         &-link {
@@ -410,10 +411,10 @@ footer {
                     position: relative;
                     a {
                         font-size: 1.4rem;
-                        color: var(--primary-color-footer);
+                        color: $primary-color-footer;
                         text-decoration: none;
                         &:hover {
-                            color: var(--primary-color-footer-link);
+                            color: $primary-color-footer-link;
                         }
                     }
                     &:before {
@@ -421,7 +422,7 @@ footer {
                         position: absolute;
                         right: -10px;
                         display: block;
-                        color: var(--primary-color-footer);
+                        color: $primary-color-footer;
                     }
                     &:last-child {
                         &:before {

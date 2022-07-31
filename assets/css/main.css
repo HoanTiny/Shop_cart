@@ -6,14 +6,19 @@
   background-color: #e9f0ef;
 }
 .main-woocart__header {
-  width: var(--primary-width);
+  width: 1170px;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  height: 200px;
+  padding: 22px 0px;
 }
 .main-woocart__header-title {
-  line-height: 92px;
   color: #3c3950;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
 }
 .main-woocart__header-title-text {
   text-transform: uppercase;
@@ -26,7 +31,7 @@
   margin-right: 22px;
 }
 .main-woocart__header-title-action {
-  font-family: var(--font-source-sans-pro);
+  font-family: "Source Sans Pro", sans-serif;
   font-size: 1.6rem;
 }
 .main-woocart__header-title-action span {
@@ -50,7 +55,7 @@
   width: 100%;
   height: 4px;
   background-color: #ff5252;
-  bottom: -34px;
+  bottom: -20px;
 }
 .main-woocart__header-icon i {
   font-size: 144px;
@@ -63,10 +68,10 @@
   justify-content: center;
   align-items: center;
   margin-top: 88px;
-  font-family: var(--font-source-sans-pro);
+  font-family: "Source Sans Pro", sans-serif;
 }
 .main-productcart__item {
-  width: var(--primary-width);
+  width: 1170px;
 }
 .main-productcart__item h4 {
   text-transform: capitalize;
@@ -79,6 +84,9 @@
 .main-productcart__item .table {
   border-collapse: collapse;
   width: 100%;
+}
+.main-productcart__item .table tbody {
+  border: 1px solid #d7dddf;
 }
 .main-productcart__item .table th {
   font-size: 1.6rem;
@@ -166,6 +174,8 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  border: 1px solid #d7dddf;
+  border-top: none;
 }
 .main-productcart__item-coupon .coupon input {
   width: 260px;
@@ -218,10 +228,11 @@
 .main-productcart__item-paytotal .shipping__country p {
   font-size: 3.6rem;
   text-transform: uppercase;
-  font-weight: 300;
+  font-weight: 200;
   letter-spacing: 5px;
   color: #706e7f;
   border-radius: 4px;
+  font-family: "Montserrat", sans-serif;
 }
 .main-productcart__item-paytotal .shipping__country select {
   width: 100%;
@@ -244,6 +255,12 @@
 .main-productcart__item-paytotal .shipping__country-zip input::placeholder {
   color: #cfd7dc;
 }
+.main-productcart__item-paytotal .shipping__country-zip input:nth-child(1) {
+  margin-right: 9px;
+}
+.main-productcart__item-paytotal .shipping__country-zip input:nth-child(2) {
+  margin-left: 9px;
+}
 .main-productcart__item-paytotal .shipping__country-btn {
   margin-top: 17px;
 }
@@ -258,9 +275,10 @@
 .main-productcart__item-paytotal .shipping__price p {
   font-size: 3.6rem;
   text-transform: uppercase;
-  font-weight: 300;
+  font-weight: 200;
   letter-spacing: 5px;
   color: #706e7f;
+  font-family: "Montserrat", sans-serif;
 }
 .main-productcart__item-paytotal .shipping__price table {
   border-collapse: collapse;
@@ -292,6 +310,11 @@
   height: 12px;
   border-radius: 50%;
   background-color: #b6c6c9;
+  cursor: pointer;
+}
+.main-productcart__item-paytotal .shipping__price table td ul li.active:before {
+  background-color: #fff;
+  border: 1px solid #ccc;
 }
 .main-productcart__item-paytotal .shipping__price table .subtotal,
 .main-productcart__item-paytotal .shipping__price table .total {
@@ -330,7 +353,7 @@
   flex-direction: column;
   width: 164px;
   text-align: center;
-  font-family: var(--font-source-sans-pro);
+  font-family: "Source Sans Pro", sans-serif;
   font-size: 1.6rem;
 }
 .main-productcart__item-interest .interest-list__item img {
@@ -347,6 +370,47 @@
   font-size: 1.6rem;
   font-weight: 500;
   letter-spacing: 0.5px;
+}
+.main-productcart__item-interest .interest-list__item.active {
+  position: relative;
+}
+.main-productcart__item-interest .interest-list__item.active:after {
+  content: "NEW";
+  position: absolute;
+  display: block;
+  top: 52px;
+  right: -10px;
+  width: 51px;
+  height: 51px;
+  border-radius: 50%;
+  background-color: #393d50;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  font-size: 12px;
+  font-family: "Montserrat", sans-serif;
+}
+.main-productcart__item-interest .interest-list__item.active:before {
+  content: "SALE!";
+  position: absolute;
+  display: block;
+  top: 8px;
+  right: -14px;
+  width: 61px;
+  height: 61px;
+  border-radius: 50%;
+  background-color: #00bcd4;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  font-size: 14px;
+  z-index: 1;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
 }
 
 /*# sourceMappingURL=main.css.map */

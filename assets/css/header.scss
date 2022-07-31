@@ -1,3 +1,4 @@
+@import "./variable";
 header {
     width: 100%;
     background-color: #f4f6f7;
@@ -11,13 +12,13 @@ header {
     justify-content: space-between;
     align-items: center;
     height: 50px;
-    font-family: var(--font-source-sans-pro);
+    font-family: $font-source-sans-pro;
     font-size: 1.4rem;
-    width: var(--primary-width);
+    width: $primary-width;
     &__phone {
         .phone_number {
             text-decoration: none;
-            color: var(--primary-color);
+            color: $primary-color;
             font-weight: 500;
             margin-left: 4px;
         }
@@ -25,7 +26,7 @@ header {
     &__social {
         &-item {
             text-decoration: none;
-            color: var(--primary-color);
+            color: $primary-color;
             margin-right: 20px;
             .fa-youtube {
                 color: #f44336;

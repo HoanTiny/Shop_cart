@@ -1,3 +1,34 @@
+@media (max-width: 739px) {
+  .hide-on-mobile {
+    display: none;
+  }
+  .nav {
+    width: 100%;
+  }
+  .nav__bars-btn, .nav__mobile-close {
+    display: block;
+  }
+  .nav__menu-mobile {
+    display: block;
+  }
+  .nav__search-checkbox:checked ~ .nav__menu-mobile {
+    display: block;
+  }
+  .main-woocart__header {
+    height: 100px !important;
+  }
+  .main-woocart__header-title-action {
+    padding: 0 12px;
+  }
+  .main-productcart__item {
+    width: 100% !important;
+    overflow-x: auto;
+  }
+  tr {
+    line-height: 2rem;
+    min-height: 60px;
+  }
+}
 nav {
   width: 100%;
   height: 100px;
@@ -10,7 +41,7 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: var(--primary-width);
+  width: 1170px;
   font-size: 1.4rem;
 }
 .nav__logo {
@@ -45,7 +76,7 @@ nav {
   cursor: pointer;
 }
 .nav__menu ul .active {
-  border: 2px solid var(--primary-color);
+  border: 2px solid #5f727f;
   padding: 8px 20px;
 }
 .nav__menu-languages {
