@@ -166,532 +166,577 @@
                 <div class="main-productcart">
                     <div class="main-productcart__item">
                         <h4>You have <span>6 items</span> in your cart.</h4>
-                        <table class="table hide-on-mobile">
-                            <thead class="thead-primary">
-                                <tr class="table__title">
-                                    <th>&nbsp;</th>
-                                    <th>Product</th>
-                                    <th>Price</th>
-                                    <th>Quantity</th>
-                                    <th>total</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr class="alert" role="alert">
-                                    <td class="table__remove">
-                                        <button
-                                            type="button"
-                                            class="close"
-                                            data-dismiss="alert"
-                                            aria-label="Close"
-                                        >
-                                            <span aria-hidden="true"
-                                                ><i class="fa fa-close"></i
-                                            ></span>
-                                        </button>
-                                    </td>
-                                    <td class="table__nameitems">
-                                        <img
-                                            src="./assets/img/languages.png"
-                                            alt=""
-                                        />
-                                        <div>
-                                            <span
-                                                >Sneakers Shoes 2020 For Men
-                                            </span>
-                                            <span
-                                                >Size: Large, Color: Black
-                                                Consect</span
-                                            >
-                                        </div>
-                                    </td>
-                                    <td class="table__price">$44.99</td>
-                                    <td class="table__quantity">
-                                        <div class="table__quantity-inputgroup">
+                        <div class="table-fix">
+                            <table class="table">
+                                <thead class="thead-primary">
+                                    <tr class="table__title">
+                                        <th>&nbsp;</th>
+                                        <th>Product</th>
+                                        <th>Price</th>
+                                        <th>Quantity</th>
+                                        <th>total</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr class="alert" role="alert">
+                                        <td class="table__remove">
                                             <button
-                                                class="btn-outline-primary"
                                                 type="button"
-                                                id="button-addon1"
+                                                class="close"
+                                                data-dismiss="alert"
+                                                aria-label="Close"
                                             >
-                                                -
+                                                <span aria-hidden="true"
+                                                    ><i class="fa fa-close"></i
+                                                ></span>
                                             </button>
-                                            <input
-                                                type="text"
-                                                name="quantity"
-                                                class="quantity form-control input-number"
-                                                value="2"
-                                                min="1"
-                                                max="100"
+                                        </td>
+                                        <td class="table__nameitems">
+                                            <img
+                                                src="./assets/img/languages.png"
+                                                alt=""
                                             />
+                                            <div>
+                                                <span
+                                                    >Sneakers Shoes 2020 For Men
+                                                </span>
+                                                <span
+                                                    >Size: Large, Color: Black
+                                                    Consect</span
+                                                >
+                                            </div>
+                                        </td>
+                                        <td class="table__price">$44.99</td>
+                                        <td class="table__quantity">
+                                            <div
+                                                class="table__quantity-inputgroup"
+                                            >
+                                                <button
+                                                    class="btn-outline-primary"
+                                                    type="button"
+                                                    id="button-addon1"
+                                                >
+                                                    -
+                                                </button>
+                                                <input
+                                                    type="text"
+                                                    name="quantity"
+                                                    class="quantity form-control input-number"
+                                                    value="2"
+                                                    min="1"
+                                                    max="100"
+                                                />
+                                                <button
+                                                    class="btn-outline-primary"
+                                                    type="button"
+                                                    id="button-addon1"
+                                                >
+                                                    +
+                                                </button>
+                                            </div>
+                                        </td>
+                                        <td class="table__total">$89.98</td>
+                                    </tr>
+                                    <tr class="alert" role="alert">
+                                        <td class="table__remove">
                                             <button
-                                                class="btn-outline-primary"
                                                 type="button"
-                                                id="button-addon1"
+                                                class="close"
+                                                data-dismiss="alert"
+                                                aria-label="Close"
                                             >
-                                                +
+                                                <span aria-hidden="true"
+                                                    ><i class="fa fa-close"></i
+                                                ></span>
                                             </button>
-                                        </div>
-                                    </td>
-                                    <td class="table__total">$89.98</td>
-                                </tr>
-                                <tr class="alert" role="alert">
-                                    <td class="table__remove">
-                                        <button
-                                            type="button"
-                                            class="close"
-                                            data-dismiss="alert"
-                                            aria-label="Close"
-                                        >
-                                            <span aria-hidden="true"
-                                                ><i class="fa fa-close"></i
-                                            ></span>
-                                        </button>
-                                    </td>
-                                    <td class="table__nameitems">
-                                        <img
-                                            src="./assets/img/languages.png"
-                                            alt=""
-                                        />
-                                        <div>
-                                            <span
-                                                >Sneakers Shoes 2020 For Men
-                                            </span>
-                                            <span
-                                                >Size: Large, Color: Black
-                                                Consect</span
-                                            >
-                                        </div>
-                                    </td>
-                                    <td class="table__price">$44.99</td>
-                                    <td class="table__quantity">
-                                        <div class="table__quantity-inputgroup">
-                                            <button
-                                                class="btn-outline-primary"
-                                                type="button"
-                                                id="button-addon1"
-                                            >
-                                                -
-                                            </button>
-                                            <input
-                                                type="text"
-                                                name="quantity"
-                                                class="quantity form-control input-number"
-                                                value="2"
-                                                min="1"
-                                                max="100"
+                                        </td>
+                                        <td class="table__nameitems">
+                                            <img
+                                                src="./assets/img/languages.png"
+                                                alt=""
                                             />
+                                            <div>
+                                                <span
+                                                    >Sneakers Shoes 2020 For Men
+                                                </span>
+                                                <span
+                                                    >Size: Large, Color: Black
+                                                    Consect</span
+                                                >
+                                            </div>
+                                        </td>
+                                        <td class="table__price">$44.99</td>
+                                        <td class="table__quantity">
+                                            <div
+                                                class="table__quantity-inputgroup"
+                                            >
+                                                <button
+                                                    class="btn-outline-primary"
+                                                    type="button"
+                                                    id="button-addon1"
+                                                >
+                                                    -
+                                                </button>
+                                                <input
+                                                    type="text"
+                                                    name="quantity"
+                                                    class="quantity form-control input-number"
+                                                    value="2"
+                                                    min="1"
+                                                    max="100"
+                                                />
+                                                <button
+                                                    class="btn-outline-primary"
+                                                    type="button"
+                                                    id="button-addon1"
+                                                >
+                                                    +
+                                                </button>
+                                            </div>
+                                        </td>
+                                        <td class="table__total">$89.98</td>
+                                    </tr>
+                                    <tr class="alert" role="alert">
+                                        <td class="table__remove">
                                             <button
-                                                class="btn-outline-primary"
                                                 type="button"
-                                                id="button-addon1"
+                                                class="close"
+                                                data-dismiss="alert"
+                                                aria-label="Close"
                                             >
-                                                +
+                                                <span aria-hidden="true"
+                                                    ><i class="fa fa-close"></i
+                                                ></span>
                                             </button>
-                                        </div>
-                                    </td>
-                                    <td class="table__total">$89.98</td>
-                                </tr>
-                                <tr class="alert" role="alert">
-                                    <td class="table__remove">
-                                        <button
-                                            type="button"
-                                            class="close"
-                                            data-dismiss="alert"
-                                            aria-label="Close"
-                                        >
-                                            <span aria-hidden="true"
-                                                ><i class="fa fa-close"></i
-                                            ></span>
-                                        </button>
-                                    </td>
-                                    <td class="table__nameitems">
-                                        <img
-                                            src="./assets/img/languages.png"
-                                            alt=""
-                                        />
-                                        <div>
-                                            <span
-                                                >Sneakers Shoes 2020 For Men
-                                            </span>
-                                            <span
-                                                >Size: Large, Color: Black
-                                                Consect</span
-                                            >
-                                        </div>
-                                    </td>
-                                    <td class="table__price">$44.99</td>
-                                    <td class="table__quantity">
-                                        <div class="table__quantity-inputgroup">
-                                            <button
-                                                class="btn-outline-primary"
-                                                type="button"
-                                                id="button-addon1"
-                                            >
-                                                -
-                                            </button>
-                                            <input
-                                                type="text"
-                                                name="quantity"
-                                                class="quantity form-control input-number"
-                                                value="2"
-                                                min="1"
-                                                max="100"
+                                        </td>
+                                        <td class="table__nameitems">
+                                            <img
+                                                src="./assets/img/languages.png"
+                                                alt=""
                                             />
+                                            <div>
+                                                <span
+                                                    >Sneakers Shoes 2020 For Men
+                                                </span>
+                                                <span
+                                                    >Size: Large, Color: Black
+                                                    Consect</span
+                                                >
+                                            </div>
+                                        </td>
+                                        <td class="table__price">$44.99</td>
+                                        <td class="table__quantity">
+                                            <div
+                                                class="table__quantity-inputgroup"
+                                            >
+                                                <button
+                                                    class="btn-outline-primary"
+                                                    type="button"
+                                                    id="button-addon1"
+                                                >
+                                                    -
+                                                </button>
+                                                <input
+                                                    type="text"
+                                                    name="quantity"
+                                                    class="quantity form-control input-number"
+                                                    value="2"
+                                                    min="1"
+                                                    max="100"
+                                                />
+                                                <button
+                                                    class="btn-outline-primary"
+                                                    type="button"
+                                                    id="button-addon1"
+                                                >
+                                                    +
+                                                </button>
+                                            </div>
+                                        </td>
+                                        <td class="table__total">$89.98</td>
+                                    </tr>
+                                    <tr class="alert" role="alert">
+                                        <td class="table__remove">
                                             <button
-                                                class="btn-outline-primary"
                                                 type="button"
-                                                id="button-addon1"
+                                                class="close"
+                                                data-dismiss="alert"
+                                                aria-label="Close"
                                             >
-                                                +
+                                                <span aria-hidden="true"
+                                                    ><i class="fa fa-close"></i
+                                                ></span>
                                             </button>
-                                        </div>
-                                    </td>
-                                    <td class="table__total">$89.98</td>
-                                </tr>
-                                <tr class="alert" role="alert">
-                                    <td class="table__remove">
-                                        <button
-                                            type="button"
-                                            class="close"
-                                            data-dismiss="alert"
-                                            aria-label="Close"
-                                        >
-                                            <span aria-hidden="true"
-                                                ><i class="fa fa-close"></i
-                                            ></span>
-                                        </button>
-                                    </td>
-                                    <td class="table__nameitems">
-                                        <img
-                                            src="./assets/img/languages.png"
-                                            alt=""
-                                        />
-                                        <div>
-                                            <span
-                                                >Sneakers Shoes 2020 For Men
-                                            </span>
-                                            <span
-                                                >Size: Large, Color: Black
-                                                Consect</span
-                                            >
-                                        </div>
-                                    </td>
-                                    <td class="table__price">$44.99</td>
-                                    <td class="table__quantity">
-                                        <div class="table__quantity-inputgroup">
-                                            <button
-                                                class="btn-outline-primary"
-                                                type="button"
-                                                id="button-addon1"
-                                            >
-                                                -
-                                            </button>
-                                            <input
-                                                type="text"
-                                                name="quantity"
-                                                class="quantity form-control input-number"
-                                                value="2"
-                                                min="1"
-                                                max="100"
+                                        </td>
+                                        <td class="table__nameitems">
+                                            <img
+                                                src="./assets/img/languages.png"
+                                                alt=""
                                             />
-                                            <button
-                                                class="btn-outline-primary"
-                                                type="button"
-                                                id="button-addon1"
+                                            <div>
+                                                <span
+                                                    >Sneakers Shoes 2020 For Men
+                                                </span>
+                                                <span
+                                                    >Size: Large, Color: Black
+                                                    Consect</span
+                                                >
+                                            </div>
+                                        </td>
+                                        <td class="table__price">$44.99</td>
+                                        <td class="table__quantity">
+                                            <div
+                                                class="table__quantity-inputgroup"
                                             >
-                                                +
-                                            </button>
-                                        </div>
-                                    </td>
-                                    <td class="table__total">$89.98</td>
-                                </tr>
-                            </tbody>
-                        </table>
-                        <table class="hide-on-pc table-product">
-                            <thead>
-                                <tr>
-                                    <th scope="col">&nbsp;</th>
-                                    <th scope="col">Product</th>
-                                    <th scope="col">Price</th>
-                                    <th scope="col">Quantity</th>
-                                    <th scope="col">total</th>
-                                    <!-- <th scope="col">Account</th>
+                                                <button
+                                                    class="btn-outline-primary"
+                                                    type="button"
+                                                    id="button-addon1"
+                                                >
+                                                    -
+                                                </button>
+                                                <input
+                                                    type="text"
+                                                    name="quantity"
+                                                    class="quantity form-control input-number"
+                                                    value="2"
+                                                    min="1"
+                                                    max="100"
+                                                />
+                                                <button
+                                                    class="btn-outline-primary"
+                                                    type="button"
+                                                    id="button-addon1"
+                                                >
+                                                    +
+                                                </button>
+                                            </div>
+                                        </td>
+                                        <td class="table__total">$89.98</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="mobile-table2" style="display: none">
+                            <table class="hide-on-pc table-product">
+                                <thead>
+                                    <tr>
+                                        <th scope="col">&nbsp;</th>
+                                        <th scope="col">Product</th>
+                                        <th scope="col">Price</th>
+                                        <th scope="col">Quantity</th>
+                                        <th scope="col">total</th>
+                                        <!-- <th scope="col">Account</th>
                                     <th scope="col">Due Date</th>
                                     <th scope="col">Amount</th>
                                     <th scope="col">Period</th> -->
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td class="table__remove">
-                                        <button
-                                            type="button"
-                                            class="close"
-                                            data-dismiss="alert"
-                                            aria-label="Close"
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td class="table__remove">
+                                            <button
+                                                type="button"
+                                                class="close"
+                                                data-dismiss="alert"
+                                                aria-label="Close"
+                                            >
+                                                <span aria-hidden="true"
+                                                    ><i class="fa fa-close"></i
+                                                ></span>
+                                            </button>
+                                        </td>
+                                        <td
+                                            data-label="Product"
+                                            class="table__nameitems"
                                         >
-                                            <span aria-hidden="true"
-                                                ><i class="fa fa-close"></i
-                                            ></span>
-                                        </button>
-                                    </td>
-                                    <td
-                                        data-label="Product"
-                                        class="table__nameitems"
-                                    >
-                                        <img
-                                            src="./assets/img/languages.png"
-                                            alt=""
-                                        />
-                                        <div>
-                                            <span
-                                                >Sneakers Shoes 2020 For Men
-                                            </span>
-                                            <span
-                                                >Size: Large, Color: Black
-                                                Consect</span
-                                            >
-                                        </div>
-                                    </td>
-                                    <td data-label="Price" class="table__price">
-                                        $44.99
-                                    </td>
-                                    <td
-                                        data-label="Quantity"
-                                        class="table__quantity"
-                                    >
-                                        <div class="table__quantity-inputgroup">
-                                            <button
-                                                class="btn-outline-primary"
-                                                type="button"
-                                                id="button-addon1"
-                                            >
-                                                -
-                                            </button>
-                                            <input
-                                                type="text"
-                                                name="quantity"
-                                                class="quantity form-control input-number"
-                                                value="2"
-                                                min="1"
-                                                max="100"
+                                            <img
+                                                src="./assets/img/languages.png"
+                                                alt=""
                                             />
-                                            <button
-                                                class="btn-outline-primary"
-                                                type="button"
-                                                id="button-addon1"
-                                            >
-                                                +
-                                            </button>
-                                        </div>
-                                    </td>
-                                    <td data-label="total" class="table__total">
-                                        $89.98
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td class="table__remove">
-                                        <button
-                                            type="button"
-                                            class="close"
-                                            data-dismiss="alert"
-                                            aria-label="Close"
+                                            <div>
+                                                <span
+                                                    >Sneakers Shoes 2020 For Men
+                                                </span>
+                                                <span
+                                                    >Size: Large, Color: Black
+                                                    Consect</span
+                                                >
+                                            </div>
+                                        </td>
+                                        <td
+                                            data-label="Price"
+                                            class="table__price"
                                         >
-                                            <span aria-hidden="true">
-                                                <i class="fa fa-close"></i>
-                                            </span>
-                                        </button>
-                                    </td>
-                                    <td
-                                        data-label="Product"
-                                        class="table__nameitems"
-                                    >
-                                        <img
-                                            src="./assets/img/languages.png"
-                                            alt=""
-                                        />
-                                        <div>
-                                            <span
-                                                >Sneakers Shoes 2020 For Men
-                                            </span>
-                                            <span
-                                                >Size: Large, Color: Black
-                                                Consect</span
-                                            >
-                                        </div>
-                                    </td>
-                                    <td data-label="Price" class="table__price">
-                                        $44.99
-                                    </td>
-                                    <td
-                                        data-label="Quantity"
-                                        class="table__quantity"
-                                    >
-                                        <div class="table__quantity-inputgroup">
-                                            <button
-                                                class="btn-outline-primary"
-                                                type="button"
-                                                id="button-addon1"
-                                            >
-                                                -
-                                            </button>
-                                            <input
-                                                type="text"
-                                                name="quantity"
-                                                class="quantity form-control input-number"
-                                                value="2"
-                                                min="1"
-                                                max="100"
-                                            />
-                                            <button
-                                                class="btn-outline-primary"
-                                                type="button"
-                                                id="button-addon1"
-                                            >
-                                                +
-                                            </button>
-                                        </div>
-                                    </td>
-                                    <td data-label="total" class="table__total">
-                                        $89.98
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td class="table__remove">
-                                        <button
-                                            type="button"
-                                            class="close"
-                                            data-dismiss="alert"
-                                            aria-label="Close"
+                                            $44.99
+                                        </td>
+                                        <td
+                                            data-label="Quantity"
+                                            class="table__quantity"
                                         >
-                                            <span aria-hidden="true"
-                                                ><i class="fa fa-close"></i
-                                            ></span>
-                                        </button>
-                                    </td>
-                                    <td
-                                        data-label="Product"
-                                        class="table__nameitems"
-                                    >
-                                        <img
-                                            src="./assets/img/languages.png"
-                                            alt=""
-                                        />
-                                        <div>
-                                            <span
-                                                >Sneakers Shoes 2020 For Men
-                                            </span>
-                                            <span
-                                                >Size: Large, Color: Black
-                                                Consect</span
+                                            <div
+                                                class="table__quantity-inputgroup"
                                             >
-                                        </div>
-                                    </td>
-                                    <td data-label="Price" class="table__price">
-                                        $44.99
-                                    </td>
-                                    <td
-                                        data-label="Quantity"
-                                        class="table__quantity"
-                                    >
-                                        <div class="table__quantity-inputgroup">
-                                            <button
-                                                class="btn-outline-primary"
-                                                type="button"
-                                                id="button-addon1"
-                                            >
-                                                -
-                                            </button>
-                                            <input
-                                                type="text"
-                                                name="quantity"
-                                                class="quantity form-control input-number"
-                                                value="2"
-                                                min="1"
-                                                max="100"
-                                            />
-                                            <button
-                                                class="btn-outline-primary"
-                                                type="button"
-                                                id="button-addon1"
-                                            >
-                                                +
-                                            </button>
-                                        </div>
-                                    </td>
-                                    <td data-label="total" class="table__total">
-                                        $89.98
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td class="table__remove">
-                                        <button
-                                            type="button"
-                                            class="close"
-                                            data-dismiss="alert"
-                                            aria-label="Close"
+                                                <button
+                                                    class="btn-outline-primary"
+                                                    type="button"
+                                                    id="button-addon1"
+                                                >
+                                                    -
+                                                </button>
+                                                <input
+                                                    type="text"
+                                                    name="quantity"
+                                                    class="quantity form-control input-number"
+                                                    value="2"
+                                                    min="1"
+                                                    max="100"
+                                                />
+                                                <button
+                                                    class="btn-outline-primary"
+                                                    type="button"
+                                                    id="button-addon1"
+                                                >
+                                                    +
+                                                </button>
+                                            </div>
+                                        </td>
+                                        <td
+                                            data-label="total"
+                                            class="table__total"
                                         >
-                                            <span aria-hidden="true"
-                                                ><i class="fa fa-close"></i
-                                            ></span>
-                                        </button>
-                                    </td>
-                                    <td
-                                        data-label="Product"
-                                        class="table__nameitems"
-                                    >
-                                        <img
-                                            src="./assets/img/languages.png"
-                                            alt=""
-                                        />
-                                        <div>
-                                            <span
-                                                >Sneakers Shoes 2020 For Men
-                                            </span>
-                                            <span
-                                                >Size: Large, Color: Black
-                                                Consect</span
-                                            >
-                                        </div>
-                                    </td>
-                                    <td data-label="Price" class="table__price">
-                                        $44.99
-                                    </td>
-                                    <td
-                                        data-label="Quantity"
-                                        class="table__quantity"
-                                    >
-                                        <div class="table__quantity-inputgroup">
+                                            $89.98
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="table__remove">
                                             <button
-                                                class="btn-outline-primary"
                                                 type="button"
-                                                id="button-addon1"
+                                                class="close"
+                                                data-dismiss="alert"
+                                                aria-label="Close"
                                             >
-                                                -
+                                                <span aria-hidden="true">
+                                                    <i class="fa fa-close"></i>
+                                                </span>
                                             </button>
-                                            <input
-                                                type="text"
-                                                name="quantity"
-                                                class="quantity form-control input-number"
-                                                value="2"
-                                                min="1"
-                                                max="100"
+                                        </td>
+                                        <td
+                                            data-label="Product"
+                                            class="table__nameitems"
+                                        >
+                                            <img
+                                                src="./assets/img/languages.png"
+                                                alt=""
                                             />
-                                            <button
-                                                class="btn-outline-primary"
-                                                type="button"
-                                                id="button-addon1"
+                                            <div>
+                                                <span
+                                                    >Sneakers Shoes 2020 For Men
+                                                </span>
+                                                <span
+                                                    >Size: Large, Color: Black
+                                                    Consect</span
+                                                >
+                                            </div>
+                                        </td>
+                                        <td
+                                            data-label="Price"
+                                            class="table__price"
+                                        >
+                                            $44.99
+                                        </td>
+                                        <td
+                                            data-label="Quantity"
+                                            class="table__quantity"
+                                        >
+                                            <div
+                                                class="table__quantity-inputgroup"
                                             >
-                                                +
+                                                <button
+                                                    class="btn-outline-primary"
+                                                    type="button"
+                                                    id="button-addon1"
+                                                >
+                                                    -
+                                                </button>
+                                                <input
+                                                    type="text"
+                                                    name="quantity"
+                                                    class="quantity form-control input-number"
+                                                    value="2"
+                                                    min="1"
+                                                    max="100"
+                                                />
+                                                <button
+                                                    class="btn-outline-primary"
+                                                    type="button"
+                                                    id="button-addon1"
+                                                >
+                                                    +
+                                                </button>
+                                            </div>
+                                        </td>
+                                        <td
+                                            data-label="total"
+                                            class="table__total"
+                                        >
+                                            $89.98
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="table__remove">
+                                            <button
+                                                type="button"
+                                                class="close"
+                                                data-dismiss="alert"
+                                                aria-label="Close"
+                                            >
+                                                <span aria-hidden="true"
+                                                    ><i class="fa fa-close"></i
+                                                ></span>
                                             </button>
-                                        </div>
-                                    </td>
-                                    <td data-label="total" class="table__total">
-                                        $89.98
-                                    </td>
-                                </tr>
-                            </tbody>
-                        </table>
+                                        </td>
+                                        <td
+                                            data-label="Product"
+                                            class="table__nameitems"
+                                        >
+                                            <img
+                                                src="./assets/img/languages.png"
+                                                alt=""
+                                            />
+                                            <div>
+                                                <span
+                                                    >Sneakers Shoes 2020 For Men
+                                                </span>
+                                                <span
+                                                    >Size: Large, Color: Black
+                                                    Consect</span
+                                                >
+                                            </div>
+                                        </td>
+                                        <td
+                                            data-label="Price"
+                                            class="table__price"
+                                        >
+                                            $44.99
+                                        </td>
+                                        <td
+                                            data-label="Quantity"
+                                            class="table__quantity"
+                                        >
+                                            <div
+                                                class="table__quantity-inputgroup"
+                                            >
+                                                <button
+                                                    class="btn-outline-primary"
+                                                    type="button"
+                                                    id="button-addon1"
+                                                >
+                                                    -
+                                                </button>
+                                                <input
+                                                    type="text"
+                                                    name="quantity"
+                                                    class="quantity form-control input-number"
+                                                    value="2"
+                                                    min="1"
+                                                    max="100"
+                                                />
+                                                <button
+                                                    class="btn-outline-primary"
+                                                    type="button"
+                                                    id="button-addon1"
+                                                >
+                                                    +
+                                                </button>
+                                            </div>
+                                        </td>
+                                        <td
+                                            data-label="total"
+                                            class="table__total"
+                                        >
+                                            $89.98
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="table__remove">
+                                            <button
+                                                type="button"
+                                                class="close"
+                                                data-dismiss="alert"
+                                                aria-label="Close"
+                                            >
+                                                <span aria-hidden="true"
+                                                    ><i class="fa fa-close"></i
+                                                ></span>
+                                            </button>
+                                        </td>
+                                        <td
+                                            data-label="Product"
+                                            class="table__nameitems"
+                                        >
+                                            <img
+                                                src="./assets/img/languages.png"
+                                                alt=""
+                                            />
+                                            <div>
+                                                <span
+                                                    >Sneakers Shoes 2020 For Men
+                                                </span>
+                                                <span
+                                                    >Size: Large, Color: Black
+                                                    Consect</span
+                                                >
+                                            </div>
+                                        </td>
+                                        <td
+                                            data-label="Price"
+                                            class="table__price"
+                                        >
+                                            $44.99
+                                        </td>
+                                        <td
+                                            data-label="Quantity"
+                                            class="table__quantity"
+                                        >
+                                            <div
+                                                class="table__quantity-inputgroup"
+                                            >
+                                                <button
+                                                    class="btn-outline-primary"
+                                                    type="button"
+                                                    id="button-addon1"
+                                                >
+                                                    -
+                                                </button>
+                                                <input
+                                                    type="text"
+                                                    name="quantity"
+                                                    class="quantity form-control input-number"
+                                                    value="2"
+                                                    min="1"
+                                                    max="100"
+                                                />
+                                                <button
+                                                    class="btn-outline-primary"
+                                                    type="button"
+                                                    id="button-addon1"
+                                                >
+                                                    +
+                                                </button>
+                                            </div>
+                                        </td>
+                                        <td
+                                            data-label="total"
+                                            class="table__total"
+                                        >
+                                            $89.98
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+
                         <div class="main-productcart__item-coupon">
                             <div class="coupon">
                                 <input
@@ -777,40 +822,68 @@
                         </div>
                         <div class="main-productcart__item-interest">
                             <p>You may be interested in</p>
-                            <div class="interest-list">
-                                <div class="interest-list__item">
-                                    <img src="./assets/img/rose.jpg" alt="" />
-                                    <span>Denim Classy Shorts</span>
-                                    <p>$35.00–$89.99</p>
+
+                            <div class="interest-list row sm-gutter">
+                                <div class="col l-2 m-3 c-6">
+                                    <div class="interest-list__item">
+                                        <img
+                                            src="./assets/img/rose.jpg"
+                                            alt=""
+                                        />
+                                        <span>Denim Classy Shorts</span>
+                                        <p>$35.00–$89.99</p>
+                                    </div>
                                 </div>
-                                <div class="interest-list__item active">
-                                    <img
-                                        class="mask_img"
-                                        src="./assets/img/lisa.jpg"
-                                        alt=""
-                                    />
-                                    <span>Golden Heels</span>
-                                    <p>$89.99</p>
+                                <div class="col l-2 m-3 c-6">
+                                    <div class="interest-list__item active">
+                                        <img
+                                            class="mask_img"
+                                            src="./assets/img/lisa.jpg"
+                                            alt=""
+                                        />
+                                        <span>Golden Heels</span>
+                                        <p>$89.99</p>
+                                    </div>
                                 </div>
-                                <div class="interest-list__item">
-                                    <img src="./assets/img/rose.jpg" alt="" />
-                                    <span>Black Impression</span>
-                                    <p>$259</p>
+                                <div class="col l-2 m-3 c-6">
+                                    <div class="interest-list__item">
+                                        <img
+                                            src="./assets/img/rose.jpg"
+                                            alt=""
+                                        />
+                                        <span>Black Impression</span>
+                                        <p>$259</p>
+                                    </div>
                                 </div>
-                                <div class="interest-list__item">
-                                    <img src="./assets/img/lisa.jpg" alt="" />
-                                    <span>Denim Classy Shorts</span>
-                                    <p>$35.00–$89.99</p>
+                                <div class="col l-2 m-3 c-6">
+                                    <div class="interest-list__item">
+                                        <img
+                                            src="./assets/img/lisa.jpg"
+                                            alt=""
+                                        />
+                                        <span>Denim Classy Shorts</span>
+                                        <p>$35.00–$89.99</p>
+                                    </div>
                                 </div>
-                                <div class="interest-list__item">
-                                    <img src="./assets/img/rose.jpg" alt="" />
-                                    <span>Golden Heels</span>
-                                    <p>$35.00–$89.99</p>
+                                <div class="col l-2 m-3 c-6">
+                                    <div class="interest-list__item">
+                                        <img
+                                            src="./assets/img/rose.jpg"
+                                            alt=""
+                                        />
+                                        <span>Golden Heels</span>
+                                        <p>$35.00–$89.99</p>
+                                    </div>
                                 </div>
-                                <div class="interest-list__item">
-                                    <img src="./assets/img/lisa.jpg" alt="" />
-                                    <span>Black Impression</span>
-                                    <p>$35.00–$89.99</p>
+                                <div class="col l-2 m-3 c-6">
+                                    <div class="interest-list__item">
+                                        <img
+                                            src="./assets/img/lisa.jpg"
+                                            alt=""
+                                        />
+                                        <span>Black Impression</span>
+                                        <p>$35.00–$89.99</p>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -819,281 +892,450 @@
             </div>
             <footer>
                 <div class="footer">
-                    <div class="footer__contact">
-                        <div class="footer__contact-logo">
-                            <img src="./assets/img/Outlines copy.png" alt="" />
-                            <div class="logo-brand">
-                                <span>The</span>
-                                <p>Gem</p>
-                            </div>
-                        </div>
-                        <div class="footer__contact-intro">
-                            Lorem Ipsum. Proin gravida nibh vel velit auctor
-                            aliquet. Aenea. Lorem Ipsum. Proin gravida nibh vel
-                            velit auctor aliquet. Aenea. Lorem Ipsum. Proin
-                            gravida nibh vel velit auctor aliquet. Aenea
-                        </div>
-                        <div class="footer__contact-heading footer-heading">
-                            Contact
-                        </div>
-                        <div class="footer__contact-address">
-                            <i class="fa-solid fa-location-dot"></i>
-                            <span>Address:</span>
-                            <p>
-                                908 New Hampshire Avenue Northwest #100,
-                                Washington, DC
-                            </p>
-                        </div>
-                        <hr class="hr" />
-                        <div class="footer__contact-contact">
-                            <div class="contact-phone">
-                                <i class="fa-solid fa-phone"></i>
-                                <span>Phone:</span>
-                                <p>+1 (202) 555-0191</p>
-                            </div>
-                            <!-- fax -->
-                            <div class="contact-fax">
-                                <i class="fa-solid fa-fax"></i>
-                                <span>Fax:</span>
-                                <p>+1 (202) 555-0191</p>
-                            </div>
-                            <!-- email -->
-                            <div class="contact-email">
-                                <i class="fa-solid fa-envelope"></i>
-                                <span>Email:</span>
-                                <p>
-                                    <a
-                                        href="mailto:fdfdf
-                                    @gmail.com"
-                                        >hoantiny01@gmail.com
-                                    </a>
-                                </p>
-                            </div>
-
-                            <!-- website -->
-                            <div class="contact-website">
-                                <i class="fa-solid fa-globe"></i>
-                                <span>Website:</span>
-                                <p>
-                                    <a href="https://www.google.com">
-                                        https://www.google.com
-                                    </a>
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="footer__recent">
-                        <div class="footer__recent-heading footer-heading">
-                            Recent Post
-                        </div>
-                        <div class="footer__recent-post">
-                            <div class="post-items">
-                                <div class="recent-posts__img">
-                                    <img src="./assets/img/rose3.jpg" alt="" />
-                                </div>
-                                <div class="recent-posts__content">
-                                    <div>
-                                        <div
-                                            class="recent-posts__content-heading"
-                                        >
-                                            <span
-                                                >Proin gravida nibh vel velit
-                                                auctor aliquet aenean...</span
-                                            >
-                                        </div>
-                                        <div class="recent-posts__content-date">
-                                            <span class="date-post">
-                                                January 1, 2020
-                                            </span>
-                                            <div class="comment">
-                                                <i
-                                                    class="fa-solid fa-comment"
-                                                ></i>
-                                                <span>0</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="post-items">
-                                <div class="recent-posts__img">
-                                    <img src="./assets/img/rose3.jpg" alt="" />
-                                </div>
-                                <div class="recent-posts__content">
-                                    <div>
-                                        <div
-                                            class="recent-posts__content-heading"
-                                        >
-                                            <span
-                                                >Proin gravida nibh vel velit
-                                                auctor aliquet aenean...</span
-                                            >
-                                        </div>
-                                        <div class="recent-posts__content-date">
-                                            <span class="date-post">
-                                                January 1, 2020
-                                            </span>
-                                            <div class="comment active">
-                                                <i
-                                                    class="fa-solid fa-comment"
-                                                ></i>
-                                                <span>14</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="post-items">
-                                <div class="recent-posts__img">
-                                    <img src="./assets/img/rose3.jpg" alt="" />
-                                </div>
-                                <div class="recent-posts__content">
-                                    <div>
-                                        <div
-                                            class="recent-posts__content-heading"
-                                        >
-                                            <span
-                                                >Proin gravida nibh vel velit
-                                                auctor aliquet aenean...</span
-                                            >
-                                        </div>
-                                        <div class="recent-posts__content-date">
-                                            <span class="date-post">
-                                                January 1, 2020
-                                            </span>
-                                            <div class="comment">
-                                                <i
-                                                    class="fa-solid fa-comment"
-                                                ></i>
-                                                <span>0</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="footer__recent-heading footer-heading">
-                            Useful links
-                        </div>
-                        <div class="footer__recent-links">
-                            <ul class="footer__recent-links-list">
-                                <li class="footer__recent-links-list-item">
-                                    General Information For Users
-                                </li>
-                                <li class="footer__recent-links-list-item">
-                                    General Information For Users
-                                </li>
-                                <li
-                                    class="footer__recent-links-list-item active"
-                                >
-                                    General Information For Users
-                                </li>
-                                <li class="footer__recent-links-list-item">
-                                    General Information For Users
-                                </li>
-                                <li class="footer__recent-links-list-item">
-                                    General Information For Users
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="footer__email">
-                        <div class="footer__email-heading footer-heading">
-                            Email us
-                        </div>
-                        <div class="footer__email-form">
-                            <form action="#" class="footer__email-form-content">
-                                <!-- Input name -->
-                                <div class="form-input">
-                                    <input
-                                        type="text"
-                                        name="name"
-                                        placeholder="Name"
+                    <div class="row sm-gutter">
+                        <div class="col l-3 m-6 c-12">
+                            <div class="footer__contact">
+                                <div class="footer__contact-logo">
+                                    <img
+                                        src="./assets/img/Outlines copy.png"
+                                        alt=""
                                     />
-                                    <!-- icon user -->
-                                    <i class="fa-solid fa-user"></i>
+                                    <div class="logo-brand">
+                                        <span>The</span>
+                                        <p>Gem</p>
+                                    </div>
                                 </div>
-                                <!-- Input email -->
-                                <div class="form-input">
+                                <div class="footer__contact-intro">
+                                    Lorem Ipsum. Proin gravida nibh vel velit
+                                    auctor aliquet. Aenea. Lorem Ipsum. Proin
+                                    gravida nibh vel velit auctor aliquet.
+                                    Aenea. Lorem Ipsum. Proin gravida nibh vel
+                                    velit auctor aliquet. Aenea
+                                </div>
+                                <div
+                                    class="footer__contact-heading footer-heading"
+                                >
+                                    Contact
+                                </div>
+                                <div class="footer__contact-address">
+                                    <i class="fa-solid fa-location-dot"></i>
+                                    <span>Address:</span>
+                                    <p>
+                                        908 New Hampshire Avenue Northwest #100,
+                                        Washington, DC
+                                    </p>
+                                </div>
+                                <hr class="hr" />
+                                <div class="footer__contact-contact">
+                                    <div class="contact-phone">
+                                        <i class="fa-solid fa-phone"></i>
+                                        <span>Phone:</span>
+                                        <p>+1 (202) 555-0191</p>
+                                    </div>
+                                    <!-- fax -->
+                                    <div class="contact-fax">
+                                        <i class="fa-solid fa-fax"></i>
+                                        <span>Fax:</span>
+                                        <p>+1 (202) 555-0191</p>
+                                    </div>
+                                    <!-- email -->
+                                    <div class="contact-email">
+                                        <i class="fa-solid fa-envelope"></i>
+                                        <span>Email:</span>
+                                        <p>
+                                            <a
+                                                href="mailto:fdfdf
+                                            @gmail.com"
+                                                >hoantiny01@gmail.com
+                                            </a>
+                                        </p>
+                                    </div>
+
+                                    <!-- website -->
+                                    <div class="contact-website">
+                                        <i class="fa-solid fa-globe"></i>
+                                        <span>Website:</span>
+                                        <p>
+                                            <a href="https://www.google.com">
+                                                https://www.google.com
+                                            </a>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col l-3 m-6 c-12">
+                            <div class="footer__recent">
+                                <div
+                                    class="footer__recent-heading footer-heading"
+                                >
+                                    Recent Post
+                                </div>
+                                <div class="footer__recent-post">
+                                    <div class="post-items">
+                                        <div class="recent-posts__img">
+                                            <img
+                                                src="./assets/img/rose3.jpg"
+                                                alt=""
+                                            />
+                                        </div>
+                                        <div class="recent-posts__content">
+                                            <div>
+                                                <div
+                                                    class="recent-posts__content-heading"
+                                                >
+                                                    <span
+                                                        >Proin gravida nibh vel
+                                                        velit auctor aliquet
+                                                        aenean...</span
+                                                    >
+                                                </div>
+                                                <div
+                                                    class="recent-posts__content-date"
+                                                >
+                                                    <span class="date-post">
+                                                        January 1, 2020
+                                                    </span>
+                                                    <div class="comment">
+                                                        <i
+                                                            class="fa-solid fa-comment"
+                                                        ></i>
+                                                        <span>0</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="post-items">
+                                        <div class="recent-posts__img">
+                                            <img
+                                                src="./assets/img/rose3.jpg"
+                                                alt=""
+                                            />
+                                        </div>
+                                        <div class="recent-posts__content">
+                                            <div>
+                                                <div
+                                                    class="recent-posts__content-heading"
+                                                >
+                                                    <span
+                                                        >Proin gravida nibh vel
+                                                        velit auctor aliquet
+                                                        aenean...</span
+                                                    >
+                                                </div>
+                                                <div
+                                                    class="recent-posts__content-date"
+                                                >
+                                                    <span class="date-post">
+                                                        January 1, 2020
+                                                    </span>
+                                                    <div class="comment active">
+                                                        <i
+                                                            class="fa-solid fa-comment"
+                                                        ></i>
+                                                        <span>14</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="post-items">
+                                        <div class="recent-posts__img">
+                                            <img
+                                                src="./assets/img/rose3.jpg"
+                                                alt=""
+                                            />
+                                        </div>
+                                        <div class="recent-posts__content">
+                                            <div>
+                                                <div
+                                                    class="recent-posts__content-heading"
+                                                >
+                                                    <span
+                                                        >Proin gravida nibh vel
+                                                        velit auctor aliquet
+                                                        aenean...</span
+                                                    >
+                                                </div>
+                                                <div
+                                                    class="recent-posts__content-date"
+                                                >
+                                                    <span class="date-post">
+                                                        January 1, 2020
+                                                    </span>
+                                                    <div class="comment">
+                                                        <i
+                                                            class="fa-solid fa-comment"
+                                                        ></i>
+                                                        <span>0</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div
+                                    class="footer__recent-heading footer-heading"
+                                >
+                                    Useful links
+                                </div>
+                                <div class="footer__recent-links">
+                                    <ul class="footer__recent-links-list">
+                                        <li
+                                            class="footer__recent-links-list-item"
+                                        >
+                                            General Information For Users
+                                        </li>
+                                        <li
+                                            class="footer__recent-links-list-item"
+                                        >
+                                            General Information For Users
+                                        </li>
+                                        <li
+                                            class="footer__recent-links-list-item active"
+                                        >
+                                            General Information For Users
+                                        </li>
+                                        <li
+                                            class="footer__recent-links-list-item"
+                                        >
+                                            General Information For Users
+                                        </li>
+                                        <li
+                                            class="footer__recent-links-list-item"
+                                        >
+                                            General Information For Users
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col l-3 m-6 c-12">
+                            <div class="footer__email">
+                                <div
+                                    class="footer__email-heading footer-heading"
+                                >
+                                    Email us
+                                </div>
+                                <div class="footer__email-form">
+                                    <form
+                                        action="#"
+                                        class="footer__email-form-content"
+                                    >
+                                        <!-- Input name -->
+                                        <div class="form-input">
+                                            <input
+                                                type="text"
+                                                name="name"
+                                                placeholder="Name"
+                                            />
+                                            <!-- icon user -->
+                                            <i class="fa-solid fa-user"></i>
+                                        </div>
+                                        <!-- Input email -->
+                                        <div class="form-input">
+                                            <input
+                                                type="email"
+                                                name="email"
+                                                placeholder="Email"
+                                            />
+                                            <!-- icon email -->
+                                            <i class="fa-solid fa-envelope"></i>
+                                        </div>
+                                        <!-- area -->
+                                        <textarea
+                                            name="message"
+                                            id="message"
+                                            cols="30"
+                                            rows="10"
+                                            class="form-area"
+                                            placeholder="your message"
+                                        ></textarea>
+                                        <button
+                                            type="submit"
+                                            class="form-button"
+                                        >
+                                            SEND message
+                                        </button>
+                                    </form>
+                                </div>
+                                <div
+                                    class="footer__email-heading2 footer-heading"
+                                >
+                                    projects / clients ?
+                                </div>
+                                <div
+                                    class="footer__email-listimg row sm-gutter"
+                                >
+                                    <div
+                                        class="col l-4 m-4 c-6 email-list-item"
+                                    >
+                                        <img
+                                            src="./assets/img/lisa.jpg"
+                                            alt=""
+                                        />
+                                    </div>
+                                    <div
+                                        class="col l-4 m-4 c-6 email-list-item"
+                                    >
+                                        <img
+                                            src="./assets/img/lisa.jpg"
+                                            alt=""
+                                        />
+                                    </div>
+                                    <div
+                                        class="col l-4 m-4 c-6 email-list-item"
+                                    >
+                                        <img
+                                            src="./assets/img/lisa.jpg"
+                                            alt=""
+                                        />
+                                    </div>
+                                    <div
+                                        class="col l-4 m-4 c-6 email-list-item"
+                                    >
+                                        <img
+                                            src="./assets/img/lisa.jpg"
+                                            alt=""
+                                        />
+                                    </div>
+                                    <div
+                                        class="col l-4 m-4 c-6 email-list-item"
+                                    >
+                                        <img
+                                            src="./assets/img/lisa.jpg"
+                                            alt=""
+                                        />
+                                    </div>
+                                    <div
+                                        class="col l-4 m-4 c-6 email-list-item"
+                                    >
+                                        <img
+                                            src="./assets/img/lisa.jpg"
+                                            alt=""
+                                        />
+                                    </div>
+                                </div>
+                                <div class="slide">
+                                    <span class="dot active"></span>
+                                    <span class="dot"></span>
+                                    <span class="dot"></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col l-3 m-6 c-12">
+                            <div class="footer__feed">
+                                <div
+                                    class="footer__feed-heading footer-heading"
+                                >
+                                    Flickr feed
+                                </div>
+                                <div class="footer__feed-listimg">
+                                    <div
+                                        class="col l-4 m-4 c-6 email-list-item"
+                                    >
+                                        <img
+                                            src="./assets/img/rose.jpg"
+                                            alt=""
+                                        />
+                                    </div>
+                                    <div
+                                        class="col l-4 m-4 c-6 email-list-item"
+                                    >
+                                        <img
+                                            src="./assets/img/rose.jpg"
+                                            alt=""
+                                        />
+                                    </div>
+                                    <div
+                                        class="col l-4 m-4 c-6 email-list-item"
+                                    >
+                                        <img
+                                            src="./assets/img/rose.jpg"
+                                            alt=""
+                                        />
+                                    </div>
+                                    <div
+                                        class="col l-4 m-4 c-6 email-list-item"
+                                    >
+                                        <img
+                                            src="./assets/img/rose.jpg"
+                                            alt=""
+                                        />
+                                    </div>
+                                    <div
+                                        class="col l-4 m-4 c-6 email-list-item"
+                                    >
+                                        <img
+                                            src="./assets/img/rose.jpg"
+                                            alt=""
+                                        />
+                                    </div>
+                                    <div
+                                        class="col l-4 m-4 c-6 email-list-item"
+                                    >
+                                        <img
+                                            src="./assets/img/rose.jpg"
+                                            alt=""
+                                        />
+                                    </div>
+                                    <div
+                                        class="col l-4 m-4 c-6 email-list-item"
+                                    >
+                                        <img
+                                            src="./assets/img/rose.jpg"
+                                            alt=""
+                                        />
+                                    </div>
+                                    <div
+                                        class="col l-4 m-4 c-6 email-list-item"
+                                    >
+                                        <img
+                                            src="./assets/img/rose.jpg"
+                                            alt=""
+                                        />
+                                    </div>
+                                    <div
+                                        class="col l-4 m-4 c-6 email-list-item"
+                                    >
+                                        <img
+                                            src="./assets/img/rose.jpg"
+                                            alt=""
+                                        />
+                                    </div>
+                                </div>
+                                <div
+                                    class="footer__feed-heading2 footer-heading"
+                                >
+                                    Newsletter
+                                </div>
+                                <div class="footer__feed-title">
+                                    Subscribe to our MailChimp newsletter and
+                                    stay up to date with Subscribe to our
+                                    MailChimp newsletter and stay up to date
+                                    with
+                                </div>
+                                <div class="footer__feed-input">
                                     <input
                                         type="email"
                                         name="email"
                                         placeholder="Email"
                                     />
-                                    <!-- icon email -->
-                                    <i class="fa-solid fa-envelope"></i>
+                                    <button type="submit" class="form-button">
+                                        <!-- icon button right-->
+                                        <i class="fa-solid fa-angle-right"></i>
+                                    </button>
                                 </div>
-                                <!-- area -->
-                                <textarea
-                                    name="message"
-                                    id="message"
-                                    cols="30"
-                                    rows="10"
-                                    class="form-area"
-                                    placeholder="your message"
-                                ></textarea>
-                                <button type="submit" class="form-button">
-                                    SEND message
-                                </button>
-                            </form>
-                        </div>
-                        <div class="footer__email-heading2 footer-heading">
-                            projects / clients ?
-                        </div>
-                        <div class="footer__email-listimg">
-                            <img src="./assets/img/lisa.jpg" alt="" />
-                            <img src="./assets/img/lisa.jpg" alt="" />
-                            <img src="./assets/img/lisa.jpg" alt="" />
-                            <img src="./assets/img/lisa.jpg" alt="" />
-                            <img src="./assets/img/lisa.jpg" alt="" />
-                            <img src="./assets/img/lisa.jpg" alt="" />
-                        </div>
-                        <div class="slide">
-                            <span class="dot active"></span>
-                            <span class="dot"></span>
-                            <span class="dot"></span>
-                        </div>
-                    </div>
-                    <div class="footer__feed">
-                        <div class="footer__feed-heading footer-heading">
-                            Flickr feed
-                        </div>
-                        <div class="footer__feed-listimg">
-                            <img src="./assets/img/rose.jpg" alt="" />
-                            <img src="./assets/img/lisa.jpg" alt="" />
-                            <img src="./assets/img/rose.jpg" alt="" />
-                            <img src="./assets/img/lisa.jpg" alt="" />
-                            <img src="./assets/img/rose.jpg" alt="" />
-                            <img src="./assets/img/lisa.jpg" alt="" />
-                            <img src="./assets/img/lisa.jpg" alt="" />
-                            <img src="./assets/img/rose.jpg" alt="" />
-                            <img src="./assets/img/lisa.jpg" alt="" />
-                        </div>
-                        <div class="footer__feed-heading2 footer-heading">
-                            Newsletter
-                        </div>
-                        <div class="footer__feed-title">
-                            Subscribe to our MailChimp newsletter and stay up to
-                            date with Subscribe to our MailChimp newsletter and
-                            stay up to date with
-                        </div>
-                        <div class="footer__feed-input">
-                            <input
-                                type="email"
-                                name="email"
-                                placeholder="Email"
-                            />
-                            <button type="submit" class="form-button">
-                                <!-- icon button right-->
-                                <i class="fa-solid fa-angle-right"></i>
-                            </button>
-                        </div>
-                        <!-- footer note -->
-                        <div class="footer__feed-note">
-                            <p>
-                                <span>*</span>
-                                Personal information will be encrypted
-                            </p>
+                                <!-- footer note -->
+                                <div class="footer__feed-note">
+                                    <p>
+                                        <span>*</span>
+                                        Personal information will be encrypted
+                                    </p>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
